@@ -11,8 +11,15 @@
 
 set $mod Mod4
 
-exec setxkbmap -layout "us,ir" \ -option "grp:alt_shift_toggle"
+exec --no-startup-id setxkbmap -layout "us,ir" \ -option "grp:alt_shift_toggle"
 
+# gaps
+gaps inner 15
+gaps outer 10
+# picom
+exec --no-startup-id picom --config ~/.config/i3/picom.conf -b
+# border
+default_border pixel 4 
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
