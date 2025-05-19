@@ -22,7 +22,7 @@ bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewi
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
 # keyboard
-exec --no-startup-id setxkbmap -layout "us,ir" \ -option "grp:alt_shift_toggle"
+exec --no-startup-id setxkbmap -layout "us,ir" -option "grp:alt_shift_toggle"
 
 # gaps
 gaps inner 15
