@@ -1,0 +1,12 @@
+ddterm@amezin.github.com
+CoverflowAltTab@palatis.blogspot.com
+dash-to-panel@jderose9.github.com
+blur-my-shell@aunetx
+Vitals@CoreCoding.com
+impatience@gfxmonk.net
+clipboard-history@alexsaveau.dev
+arcmenu@arcmenu.com
+ding@rastersoft.com
+tiling-assistant@ubuntu.com
+ubuntu-appindicators@ubuntu.com
+ubuntu-dock@ubuntu.com
