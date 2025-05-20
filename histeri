@@ -1,0 +1,98 @@
+listen: :443 
+
+tls: 
+  cert: /etc/ssl/private/fullchain.cer
+  key: /etc/ssl/private/private.key
+  sniGuard: strict  # dns-san 
+
+disableUDP: false
+# udpIdleTimeout: 60s
+
+auth:
+  type: password
+  password: LoijsfhASEFGD234sfd
+
+sniff:
+  enable: true 
+  timeout: 2s 
+  rewriteDomain: false 
+  tcpPorts: 80,445,8443,2096 
+  udpPorts: 80,445,8443,2096
+
+obfs:
+  type: salamander 
+  salamander:
+    password: ArldfhASEFsfgdf
+
+
+acl:
+  file: /etc/ssl/private/acl.txt
+
+# to experiment
+masquerade:
+  type: proxy
+  # file:
+  #   dir: /www/masq 
+  proxy:
+    url: https://news.ycombinator.com 
+    rewriteHost: true 
+    insecure: false 
+  
+
+  # string:
+  #   content: hello stupid world 
+  #   headers: 
+  #     content-type: text/plain
+  #     custom-stuff: ice cream so good
+  #   statusCode: 200 
+
+
+
+
+# listen: :443 
+
+# tls: 
+#   cert: /etc/hysteria/server.crt
+#   key: /etc/hysteria/server.key
+#   sniGuard: dns-san  # dns-san 
+
+# disableUDP: true
+# # udpIdleTimeout: 60s
+
+# auth:
+#   type: password
+#   password: LoijsfhASEFGD234sfd
+
+# sniff:
+#   enable: true 
+#   timeout: 2s 
+#   rewriteDomain: false 
+#   tcpPorts: 80,445,8443,2096 
+#   udpPorts: 80,445,8443,2096
+
+# obfs:
+#   type: salamander 
+#   salamander:
+#     password: ArldfhASEFsfgdf
+
+
+# # acl:
+# #   file: /etc/ssl/private/acl.txt
+
+# # to experiment
+# masquerade:
+#   type: proxy
+#   # file:
+#   #   dir: /www/masq 
+#   proxy:
+#     url: https://news.ycombinator.com 
+#     rewriteHost: true 
+#     insecure: true 
+  
+
+#   # string:
+#   #   content: hello stupid world 
+#   #   headers: 
+#   #     content-type: text/plain
+#   #     custom-stuff: ice cream so good
+#   #   statusCode: 200 
